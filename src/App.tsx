@@ -1,7 +1,10 @@
-import "./App.css";
+import AppProvider from './providers';
+import AppRouter from './routes';
 
-function App() {
-  return <div className="App">Hello</div>;
+export default function App() {
+  return (
+    <AppProvider>
+      <AppRouter />
+    </AppProvider>
+  );
 }
-
-export default App;
